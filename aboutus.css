@@ -1,0 +1,94 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  #search {
+    position: absolute;
+    top: 18%;
+   right: 1%;
+    }
+  
+  /* Style the Introduction */
+  .Introduction {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: large;
+  }
+  /* Style of the bar  */
+  nav {
+    text-align: center;
+     background-color: #000000;
+     margin-left: 200px;
+     margin-right: 200px;
+    }
+    
+    nav ul {
+   display: inline-block;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+    }
+    
+    nav ul li {
+     display: inline-block;
+     margin: 0 10px;
+    }
+    
+    nav ul li a {
+     display: block;
+     padding: 10px;
+     color: #ffffff;
+     text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+    color: #07daff;
+    background-color: #b44242;
+    }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 30%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 30%;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+body{background-color: beige;}
+.footer{ position: fixed;
+right: 0;
+bottom: 0;
+width: 100%;
+background-color: red;
+color: white;
+text-align: center;
+
+
+}
