@@ -1,7 +1,7 @@
 var slideIndex = 1;
 showDivs(slideIndex);
 
-function plusDivs(n) {
+function plusDivs(n) {// 定义slide show
   showDivs(slideIndex += n);
 }
 
@@ -15,7 +15,7 @@ function showDivs(n) {
   var dots = document.getElementsByClassName("demo");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
+  for (i = 0; i < x.length; i++) {// 用for循环来切换slide show
     x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
