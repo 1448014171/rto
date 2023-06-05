@@ -7,8 +7,8 @@ function go() {
       alert("Please fill in all fields.");
       return;
     }
-    if (isNaN(phonenumber)) {
-      alert("Phone number must be numeric!");//The test phone number must be a number
+    if (isNaN(phonenumber)|| phonenumber.length<8) {
+      alert("Phone number must be numeric and length < eight!");//The test phone number must be a number
       return;
     }
     if (isNaN(schoolID)) {
